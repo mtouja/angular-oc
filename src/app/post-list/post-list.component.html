@@ -1,0 +1,24 @@
+<!-- <div [ngStyle]="{color: getColor()}">
+  <h4>{{ postTitle }}</h4>
+</div>
+<li 
+  [ngClass]="{'list-group-item': true, 'list-group-item-success': postLove > 0, 'list-group-item-danger': postLove <= 0}">
+  <p>{{ postContent }}</p>
+  <button class="btn-success text-uppercase">Fuck Yay !</button>
+  <button class="btn-danger text-uppercase">bullshit</button>
+</li>
+<div [ngStyle]="{color: getColor()}">
+  <p>Like: {{ postLove }}</p>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="list-group" *ngFor="let post of posts">
+        <app-post-list-item>
+            <p>{{ postTitle }}</p>
+        </app-post-list-item>
+      </ul>
+    </div>
+  </div>
+</div>
